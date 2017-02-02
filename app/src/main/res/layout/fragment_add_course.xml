@@ -1,0 +1,193 @@
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.vladpop.studentagenda.AddCourse"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_subject_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/subject_name"
+                android:hint="@string/subject_name"
+                android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:text="@string/additional_information_optional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_additional" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/additional_info"
+                android:visibility="gone"
+                android:baselineAligned="false">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_professor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/professor"
+                    android:hint="@string/professor"
+                     />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_course_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="7"
+                    android:id="@+id/course_code"
+                    android:hint="@string/course_code"
+                    android:layout_height="wrap_content"
+                     />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="@string/when"
+                android:layout_width="match_parent"
+                android:id="@+id/subject_when"
+                
+                android:textSize="18sp"
+                android:layout_height="42dp"
+                android:gravity="center|start"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+
+            <cn.lankton.flowlayout.FlowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:text="@string/monday"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check_mon"
+                    
+
+                    android:layout_width="wrap_content"
+                    android:ems="7" />
+
+                <CheckBox
+                    android:text="@string/tuesday"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check_tue"
+                    
+
+                    android:layout_width="wrap_content"
+                    android:ems="7" />
+
+                <CheckBox
+                    android:text="@string/wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check_wed"
+
+                    android:ems="7" />
+
+                <CheckBox
+                    android:text="@string/thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check_thu"
+
+                    android:ems="7" />
+
+                <CheckBox
+                    android:text="@string/friday"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check_fri"
+
+
+                    android:layout_width="wrap_content"
+                    android:ems="7" />
+            </cn.lankton.flowlayout.FlowLayout>
+
+            <TextView
+                android:text="@string/you_must_pick_at_least_one_day_for_this_subject"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/check_error"
+                android:textColor="@android:color/holo_red_dark"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/days">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monInfo"
+                    android:orientation="horizontal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tueInfo"
+                    android:orientation="horizontal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wedInfo"
+                    android:orientation="horizontal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thuInfo"
+                    android:orientation="horizontal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friInfo"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_confirm_subject"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="false"
+                    android:layout_centerInParent="false"
+                    android:text="@string/confirm" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <tabs>
+            <tab
+                id="@+id/tab_courses"
+                android:icon="@drawable/ic_courses_white_24dp"
+                title="Courses" />
+            <tab
+                id="@+id/tab_assignments"
+                android:icon="@drawable/ic_assignments_white_24dp"
+                title="Assignments" />
+            <tab
+                id="@+id/tab_agenda"
+                android:icon="@drawable/ic_agenda_white_24dp"
+                title="Agenda" />
+            <tab
+                id="@+id/tab_exams"
+                android:icon="@drawable/ic_exams_white_24dp"
+                title="Exams" />
+            <tab
+                id="@+id/tab_grades"
+                android:icon="@drawable/ic_grades_white_24dp"
+                title="Grades" />
+        </tabs>
+</PreferenceScreen>

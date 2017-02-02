@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Student Agenda</string>
+
+    <!-- Strings in AddCourse -->
+    <string name="subject_name">Subject Name</string>
+    <string name="additional_information_optional">Additional Information (Optional)</string>
+    <string name="short_name">Short Name</string>
+    <string name="course_code">Course Code</string>
+    <string name="professor">Professor</string>
+    <string name="when">When</string>
+    <string name="monday">Monday</string>
+    <string name="monday_information">Monday Class Information</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="tuesday_information">Tuesday Class Information</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="wednesday_information">Wednesday Class Information</string>
+    <string name="thursday">Thursday</string>
+    <string name="thursday_information">Thursday Class Information</string>
+    <string name="friday">Friday</string>
+    <string name="friday_information">Friday Class Information</string>
+    <string name="stime">Start Time</string>
+    <string name="etime">End Time</string>
+    <string name="location">Location</string>
+    <string name="type">Type</string>
+    <string name="lecture">Lecture</string>
+    <string name="seminar">Seminar</string>
+    <string name="laboratory">Laboratory</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_subject">Add Subject</string>
+    <string name="dash">-</string>
+    <string name="delete">Delete</string>
+    <string name="you_must_pick_a_type_for_your_friday_class">You must pick a type for your Friday class.</string>
+    <string name="you_must_pick_a_type_for_your_monday_class">You must pick a type for your Monday class.</string>
+    <string name="you_must_pick_a_type_for_your_thursday_class">You must pick a type for your Thursday class.</string>
+    <string name="you_must_pick_a_type_for_your_tuesday_class">You must pick a type for your Tuesday class.</string>
+    <string name="you_must_pick_a_type_for_your_wednesday_class">You must pick a type for your Wednesday class.</string>
+    <string name="you_must_pick_at_least_one_day_for_this_subject">You must pick at least one day for this subject.</string>
+    <string name="you_must_pick_a_type_for_this_class">You must pick a type for this class.</string>
+    <string name="information">Information</string>
+    <string name="edit">Edit</string>
+
+</resources>

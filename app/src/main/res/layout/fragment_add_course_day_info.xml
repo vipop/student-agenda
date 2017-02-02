@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vladpop.studentagenda.AddCourseDayInfo"
+    android:id="@+id/day_info"
+    android:orientation="vertical">
+
+        <TextView
+            android:text="@string/information"
+            android:layout_width="match_parent"
+            android:id="@+id/day_info_title"
+
+            android:textSize="18sp"
+            android:layout_height="42dp"
+            android:gravity="center|start" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:visibility="visible"
+            android:baselineAligned="false">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_day_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/day_location"
+                    android:hint="@string/location"
+                    android:maxLines="1"
+                    android:visibility="visible"
+
+                    android:textSize="14sp"
+                    android:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_day_stime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:ems="5"
+                    android:id="@+id/day_stime"
+                    android:maxLines="1"
+                    android:visibility="visible"
+                    android:layout_weight="1.5"
+                    android:textSize="14sp"
+                    android:hint="@string/stime" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_day_etime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:ems="5"
+                    android:id="@+id/day_etime"
+                    android:maxLines="1"
+                    android:visibility="visible"
+                    android:layout_weight="1.5"
+                    android:textSize="14sp"
+                    android:hint="@string/etime" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/type"
+            android:layout_width="match_parent"
+            android:id="@+id/day_type"
+
+            android:textSize="14sp"
+            android:layout_height="42dp"
+            android:gravity="center|start" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/day_radio">
+
+            <RadioButton
+                android:text="@string/lecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_lec"
+                android:ems="7"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/seminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_sem"
+                android:ems="7"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/laboratory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_lab"
+                android:ems="7"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+        <TextView
+            android:text="@string/you_must_pick_a_type_for_this_class"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/day_rad_error"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:layout_weight="1" />
+
+</LinearLayout>
